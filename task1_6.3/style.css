@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 200px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    border-radius: 0 px;
+    background-color: rgb(20, 20, 200);
+    opacity: 0.6;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+#btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #2A2B24;
+    opacity: 0.8;
+}
+
+.btn-text {
+    margin-left: 35px;
+    margin-right: 10px;
+}
+
+.btn-icon {
+    width: 30px;
+    height: 30px;
+    transition-duration: 0.3s;
+}
+
+#btn:active {
+    color: whitesmoke;
+    text-shadow: 0 0 10px white;
+    transform: scale(1.15);
+}
+
+.icon-rotate {
+    animation-duration: 1s;
+    animation-name: rotate;
+    animation-iteration-count: 1;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
